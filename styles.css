@@ -1,0 +1,275 @@
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1c1c1c; /* Dark professional background */
+  /* height: 100vh; */
+  /* color: #f5f5f5; Light text for readability */
+/* }  */
+
+@media screen and (max-width: 50em) {
+  body {
+    flex-direction: column;
+    height: 100%;
+  }
+}
+
+body .heading {
+  margin: 3rem 0 5rem 0;
+}
+
+body .title,
+body .sub-title {
+  font-size: 4rem;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: #f5f5f5;
+}
+
+body .sub-title {
+  font-size: 1.5rem;
+  opacity: 0.7;
+}
+
+body .user-input-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+}
+
+@media screen and (max-width: 50em) {
+  body .user-input-section {
+    width: 100%;
+    margin: 2rem 0 0 0;
+  }
+}
+
+body .user-input-section .user-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+body .user-input-section .user-input label {
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+body .user-input-section .user-input input {
+  width: 80%;
+  max-width: 35rem;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #444; /* Softer input background */
+  padding: 1.5rem 1rem;
+  margin: 1rem 1rem 2rem 1rem;
+  color: #f5f5f5;
+}
+
+body .user-input-section .user-input input::placeholder {
+  color: #ddd;
+}
+
+body .button {
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1.5rem 2.5rem;
+  margin-bottom: 3rem;
+  background-color: #0077b6; /* Professional blue */
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 1.6rem;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+body .qr-code-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+
+@media screen and (max-width: 50em) {
+  body .qr-code-container {
+    width: 100%;
+    margin: 8rem 0;
+  }
+}
+
+body .qr-code-container .qr-code {
+  display: flex;
+  border-radius: 1rem;
+  background-color: #222; /* Darker shade for QR code box */
+  width: fit-content;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+body .qr-code-container .qr-code button {
+  display: flex;
+  justify-content: center;
+  background-color: #005f8d;
+  color: #fff;
+  border: none;
+  outline: none;
+  width: 100%;
+  margin-top: 2.5rem;
+  border-radius: 1rem;
+}
+
+body .qr-code-container .qr-code button a {
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #fff;
+  padding: 1rem;
+}
+:root {
+  --gray-lighter: #f7f7f7;
+  --gray-light: #dbdbdd;
+  --gray-dark: #aeafb3;
+  --gray-darker: #454547;
+  --pink: #e89d93;
+  --yellow: #eec71a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: powderblue;
+  color: var(--gray-darker);
+  font-family: 'Open Sans', sans-serif;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.wrap {
+  width: 100vw;  /* Full screen width */
+  height: 100vh; /* Full screen height */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.block {
+  width: 100%;
+  height: 100%;
+}
+
+.style-1 {
+  background: var(--gray-darker);
+}
+
+.style-2 {
+  width: 0;
+  height: 0;
+  border: 50px solid var(--gray-lighter);
+  border-top-color: var(--gray-dark);
+  border-bottom-color: var(--gray-dark);
+  background: var(--gray-dark);
+  padding-top: 1px;
+}
+
+.style-3 {
+  background-image: linear-gradient(135deg, var(--pink) 50%, var(--gray-light) 50%);
+}
+
+.style-4 {
+  background-image: linear-gradient(
+    var(--gray-lighter),
+    var(--gray-lighter) 7px,
+    var(--gray-darker) 7px,
+    var(--gray-darker)
+  );
+  background-size: 100% 14px;
+}
+
+.style-5 {
+  background-image: linear-gradient(45deg, var(--yellow) 50%, var(--gray-lighter) 50%);
+}
+
+.style-6 {
+  background-image: 
+    linear-gradient(135deg, var(--gray-darker) 50%, transparent 50%),
+    linear-gradient(
+    var(--gray-lighter),
+    var(--gray-lighter) 7px,
+    var(--gray-darker) 7px,
+    var(--gray-darker)
+  );
+  background-size: 100%, 100% 14px;
+}
+
+.style-7 {
+  background: 
+    linear-gradient(45deg, var(--gray-light) 50%, transparent 50%),
+    radial-gradient(var(--gray-darker) 4px, transparent 4px),
+    radial-gradient(var(--gray-darker) 4px, transparent 4px),
+    transparent;
+  background-size: 100%, 24px 24px, 24px 24px, 100%;
+  background-position: 0 0, -2px 6px, 10px 18px, 0 0;
+}
+
+.style-8 {
+  background-image: linear-gradient(315deg, var(--yellow) 50%, var(--gray-lighter) 50%);
+}
+
+.style-9 {
+  background-image: linear-gradient(225deg, var(--pink) 50%, var(--gray-lighter) 50%);
+}
+
+.style-10 {
+  background: var(--gray-light);
+}
+
+.style-11 {
+  background-image: linear-gradient(45deg, var(--pink) 50%, var(--gray-lighter) 50%);
+}
+
+.style-12 {
+  background-image: linear-gradient(225deg, var(--yellow) 50%, var(--gray-lighter) 50%);
+}
+
+.block-13 {
+  background-image: linear-gradient(to right,
+    var(--pink),
+    var(--pink) 4px,
+    var(--gray-lighter) 4px,
+    var(--gray-lighter)
+  );
+  background-size: 8px 100%;
+}
